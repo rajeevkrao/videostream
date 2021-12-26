@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><script>document.write(</script></title>
+    <script type="module">
+    import mime from "https://cdn.skypack.dev/mime/lite";
+    </script>
+    <style>
+      body {
+        margin: 40px auto;
+        line-height: 1.6;
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        color: #fff;
+        padding: 0 10px;
+        background-color: #121212;
+      }
+      h2 {
+        line-height: 1.2;
+      }
+      video{
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      var path = encodeURI("@AM SHERSHAAH (2021) Hindi HDRip.mkv")
+      const params = new URLSearchParams(window.location.search)
+      console.log(params.get('path'))
+      if(params.get('path'))
+        path = params.get('path');
+
+      document.write(`<video id="videoPlayer" width="650" controls autoplay >
+      <source src="/videoext?path=${path}" type="video/mp4" />
+    </video>`)
+    </script> 
+    <script>
+      document.write(`<i>${params.get('path')}</i>`)
+    </script>
+  </body>
+</html>
