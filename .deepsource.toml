@@ -2,8 +2,13 @@ version = 1
 
 [checks]
   [[checks.html]]
+  check = "html-001"
+  check = "html-002"
+  check = "html-003"
+  
   [[checks.css]]
-
+  check = "css-001"
+  check = "css-002"
 
 [[analyzers]]
 name = "javascript"
