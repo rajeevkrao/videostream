@@ -2,7 +2,7 @@ version = 1
 
 [checks]
   [[checks.html]]
-  check = ["html-001", "html-002", "html-003"]
+  check = [  "html-001",  "html-002",  "html-003",  "html-004",  "html-005",  "html-006",  "html-007",  "html-008",  "html-009",  "html-010"]
   
   [[checks.css]]
   check = ["css-001", "css-002"]
